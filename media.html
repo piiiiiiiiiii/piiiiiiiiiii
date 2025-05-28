@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨ GISELLE MEDIA ✨</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: #000 url('assets/images/vhs-static.gif');
+            color: #ff00ff;
+        }
+
+        .media-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .media-item {
+            border: 3px solid cyan;
+            transition: all 0.3s;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .media-item:hover {
+            transform: scale(1.05);
+            border-color: magenta;
+            box-shadow: 0 0 20px #ff00ff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cursor-trail"></div>
+    <div class="neon-border"></div>
+
+    <div class="marquee-container">
+        <marquee behavior="scroll" direction="right" scrollamount="12">
+            ✨📸 MEDIA GALLERY ••• AESPA PERFORMANCES ••• FANCAMS ••• INTERVIEWS ••• INSTAGRAM HIGHLIGHTS ••• PHOTOSHOOTS
+            ••• BEHIND THE SCENES 📸✨
+        </marquee>
+    </div>
+
+    <header>
+        <h1 class="neon-text">MEDIA</h1>
+    </header>
+
+    <nav class="y2k-nav">
+        <ul>
+            <li><a href="index.html" class="neon-btn">HOME</a></li>
+            <li><a href="profile.html" class="neon-btn">PROFILE</a></li>
+            <li><a href="media.html" class="neon-btn active">MEDIA</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2 class="rainbow-text">VIDEOS</h2>
+            <div class="video-container">
+                <!-- YouTube嵌入 -->
+                <div class="video-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4TWR90KJl84" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <p class="video-caption">Giselle's iconic rap in 'Black Mamba'</p>
+                </div>
+
+                <div class="video-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZeerrnuLi5E" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <p class="video-caption">Giselle fancam - 'Next Level' performance</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="rainbow-text">PHOTO GALLERY</h2>
+            <div class="media-grid">
+                <div class="media-item">
+                    <img src="assets/images/giselle1.jpg" alt="Giselle photo 1" class="glitch-img">
+                </div>
+                <div class="media-item">
+                    <img src="assets/images/giselle2.jpg" alt="Giselle photo 2" class="glitch-img">
+                </div>
+                <div class="media-item">
+                    <img src="assets/images/giselle3.jpg" alt="Giselle photo 3" class="glitch-img">
+                </div>
+                <div class="media-item">
+                    <img src="assets/images/giselle4.jpg" alt="Giselle photo 4" class="glitch-img">
+                </div>
+                <div class="media-item">
+                    <img src="assets/images/giselle5.jpg" alt="Giselle photo 5" class="glitch-img">
+                </div>
+                <div class="media-item">
+                    <img src="assets/images/giselle6.jpg" alt="Giselle photo 6" class="glitch-img">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="cyber-footer">
+        <p>© 2024 GISELLE Y2K SHRINE ••• ALL MEDIA BELONGS TO SM ENTERTAINMENT •••</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

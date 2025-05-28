@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨ GISELLE ✨ Y2K WORLD</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        body {
+            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><text x="0" y="20" font-family="Arial" font-size="20">🦋</text></svg>'), auto;
+            background: #000 url('assets/images/glitch-bg.gif') center/cover;
+            overflow-x: hidden;
+        }
+
+        .glitch {
+            animation: glitch 1s linear infinite;
+        }
+
+        @keyframes glitch {
+            0% {
+                text-shadow: 3px 0 0 #ff00ff, -3px 0 0 #00ffff;
+            }
+
+            25% {
+                text-shadow: -3px 0 0 #ff00ff, 3px 0 0 #00ffff;
+            }
+
+            50% {
+                text-shadow: 3px 0 0 #ffff00, -3px 0 0 #ff00ff;
+            }
+
+            75% {
+                text-shadow: -3px 0 0 #ffff00, 3px 0 0 #00ffff;
+            }
+
+            100% {
+                text-shadow: 3px 0 0 #00ffff, -3px 0 0 #ffff00;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 鼠标尾巴特效 -->
+    <div class="cursor-trail"></div>
+
+    <!-- 霓虹边框 -->
+    <div class="neon-border"></div>
+
+    <!-- 跑马灯 -->
+    <div class="marquee-container">
+        <marquee behavior="scroll" direction="left" scrollamount="10">
+            ✨🦋💖 WELCOME TO GISELLE'S Y2K WORLD 💖🦋✨ ••• ジセル ••• ギセル ••• MAIN RAPPER OF AESPA ••• 2000.10.30 ••• SEOUL
+            ••• TOKYO •••
+        </marquee>
+    </div>
+
+    <header class="glitch">
+        <h1 data-text="GISELLE">GISELLE</h1>
+        <p>aespa's ✨ neon princess ✨</p>
+    </header>
+
+    <nav class="y2k-nav">
+        <ul>
+            <li><a href="index.html" class="neon-btn active">HOME</a></li>
+            <li><a href="profile.html" class="neon-btn">PROFILE</a></li>
+            <li><a href="media.html" class="neon-btn">MEDIA</a></li>
+        </ul>
+    </nav>
+
+    <main class="grid-container">
+        <section class="y2k-card">
+            <h2 class="rainbow-text">LATEST UPDATE</h2>
+            <div class="pixel-border">
+                <p>Giselle at Coachella 2024 with aespa!</p>
+                <div class="pixel-art"></div>
+            </div>
+        </section>
+
+        <section class="y2k-card">
+            <h2 class="rainbow-text">INSTA SNIPPET</h2>
+            <!-- Instagram嵌入 -->
+            <div class="ig-embed">
+                <iframe src="https://www.instagram.com/p/C5jK3J0vX9V/embed" width="300" height="400" frameborder="0"
+                    scrolling="no"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer class="cyber-footer">
+        <p>© 2024 GISELLE Y2K SHRINE ••• MADE WITH 💖 ••• BEST VIEWED IN 800X600</p>
+    </footer>
+
+    <!-- 背景音乐 -->
+    <audio autoplay loop>
+        <source src="assets/audio/background.mid" type="audio/midi">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
